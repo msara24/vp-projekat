@@ -1,2 +1,12 @@
-# vp-projekat
-Projekat iz predmeta Virtuelizacija procesa (WCF, rad sa fajlovima, stream-ovi, događaji)
+#VP projekat
+Projekat iz predmeta Virtuelizacija procesa.
+
+##Tema
+Nije dodeljena
+
+##Opis
+Aplikacija za obradu i razmenu podataka korišćenjem:
+- WCF servisa  
+- rada sa fajlovima i direktorijumima  
+- MemoryStream-a  
+- delegata i događaja  
