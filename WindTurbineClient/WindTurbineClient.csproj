@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WindTurbineContracts\WindTurbineContracts.csproj">
+      <Project>{ac73a8ef-5a57-442d-bf04-49fbdee5bd98}</Project>
+      <Name>WindTurbineContracts</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

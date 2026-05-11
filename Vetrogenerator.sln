@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36915.13 d17.14
+VisualStudioVersion = 17.14.36915.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindTurbineServer", "WindTurbineServer\WindTurbineServer.csproj", "{20F28927-A6BA-445A-AEB8-7D63BC407EAD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindTurbineServer", "WindTurbineServer\WindTurbineServer.csproj", "{8EE2A2C7-BD17-45B2-80FC-A50F73BF3AD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindTurbineClient", "WindTurbineClient\WindTurbineClient.csproj", "{9B433F6F-8D81-445C-A2F4-5A75F0E52C23}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindTurbineClient", "WindTurbineClient\WindTurbineClient.csproj", "{0919CA2C-D2BA-4641-A390-3CFDAA3049E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindTurbineContracts", "WindTurbineContracts\WindTurbineContracts.csproj", "{EC041789-1BBA-446E-A8B2-A3CA295A6493}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindTurbineContracts", "WindTurbineContracts\WindTurbineContracts.csproj", "{AC73A8EF-5A57-442D-BF04-49FBDEE5BD98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{20F28927-A6BA-445A-AEB8-7D63BC407EAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{20F28927-A6BA-445A-AEB8-7D63BC407EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{20F28927-A6BA-445A-AEB8-7D63BC407EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{20F28927-A6BA-445A-AEB8-7D63BC407EAD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9B433F6F-8D81-445C-A2F4-5A75F0E52C23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9B433F6F-8D81-445C-A2F4-5A75F0E52C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9B433F6F-8D81-445C-A2F4-5A75F0E52C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9B433F6F-8D81-445C-A2F4-5A75F0E52C23}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EC041789-1BBA-446E-A8B2-A3CA295A6493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC041789-1BBA-446E-A8B2-A3CA295A6493}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC041789-1BBA-446E-A8B2-A3CA295A6493}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC041789-1BBA-446E-A8B2-A3CA295A6493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EE2A2C7-BD17-45B2-80FC-A50F73BF3AD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EE2A2C7-BD17-45B2-80FC-A50F73BF3AD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EE2A2C7-BD17-45B2-80FC-A50F73BF3AD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EE2A2C7-BD17-45B2-80FC-A50F73BF3AD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0919CA2C-D2BA-4641-A390-3CFDAA3049E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0919CA2C-D2BA-4641-A390-3CFDAA3049E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0919CA2C-D2BA-4641-A390-3CFDAA3049E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0919CA2C-D2BA-4641-A390-3CFDAA3049E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC73A8EF-5A57-442D-BF04-49FBDEE5BD98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC73A8EF-5A57-442D-BF04-49FBDEE5BD98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC73A8EF-5A57-442D-BF04-49FBDEE5BD98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC73A8EF-5A57-442D-BF04-49FBDEE5BD98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
