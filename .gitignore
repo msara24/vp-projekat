@@ -263,6 +263,7 @@ _pkginfo.txt
 ClientBin/
 ~$*
 *~
+*.csv
 *.dbmdl
 *.dbproj.schemaview
 *.jfm

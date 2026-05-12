@@ -11,15 +11,22 @@ namespace WindTurbineServer
 {
     public class WindTurbineService : IWindTurbineService
     {
-        private string currentFile;
+        private static string currentFile;
 
         public void StartSession(string turbineId)
         {
+            string baseFolder =
+                AppDomain.CurrentDomain.BaseDirectory;
+
             string date =
                 DateTime.Now.ToString("yyyy-MM-dd");
 
             string folder =
-                Path.Combine("Data", turbineId, date);
+                Path.Combine(
+                    baseFolder,
+                    "Data",
+                    turbineId,
+                    date);
 
             Directory.CreateDirectory(folder);
 
@@ -33,6 +40,7 @@ namespace WindTurbineServer
         public void PushSample(
             List<WindTurbineSample> samples)
         {
+            Console.WriteLine(currentFile);
             using (StreamWriter sw =
                    new StreamWriter(currentFile, true))
             {
