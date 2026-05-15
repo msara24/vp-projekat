@@ -65,9 +65,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="Turbine_Data_Kelmarsh_1_2018-01-01_-_2019-01-01_228.csv">
+    <Content Include="Turbine_Data_Kelmarsh_1_2018-01-01_-_2019-01-01_228.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WindTurbineContracts\WindTurbineContracts.csproj">

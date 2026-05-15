@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using System.ServiceModel;
 
 namespace WindTurbineContracts
@@ -15,7 +11,7 @@ namespace WindTurbineContracts
         void StartSession(string turbineId);
 
         [OperationContract]
-        void PushSample(List<WindTurbineSample> samples);
+        string PushSample(List<WindTurbineSample> samples);
 
         [OperationContract]
         void EndSession();

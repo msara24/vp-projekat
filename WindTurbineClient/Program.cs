@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.ServiceModel;
 using WindTurbineContracts;
 
@@ -12,23 +9,21 @@ namespace WindTurbineClient
     {
         static void Main(string[] args)
         {
-            NetTcpBinding binding =
-            new NetTcpBinding();
+            NetTcpBinding binding = new NetTcpBinding();
 
-            binding.TransferMode =
-                TransferMode.Streamed;
+            // IMPORTANT
+            binding.Security.Mode = SecurityMode.None;
 
-            binding.MaxReceivedMessageSize =
-                10485760;
+            binding.TransferMode = TransferMode.Streamed;
+
+            binding.MaxReceivedMessageSize = 10485760;
 
             EndpointAddress address =
                 new EndpointAddress(
                     "net.tcp://localhost:9000/WindService");
 
-            ChannelFactory<IWindTurbineService>
-                factory =
-                new ChannelFactory
-                <IWindTurbineService>(
+            ChannelFactory<IWindTurbineService> factory =
+                new ChannelFactory<IWindTurbineService>(
                     binding,
                     address);
 
@@ -56,7 +51,10 @@ namespace WindTurbineClient
                             i,
                             Math.Min(10, samples.Count - i));
 
-                    proxy.PushSample(batch);
+                    string response =
+                        proxy.PushSample(batch);
+
+                    Console.WriteLine(response);
 
                     Console.WriteLine(
                         $"Sent batch {(i / 10) + 1}");
@@ -67,11 +65,18 @@ namespace WindTurbineClient
                 proxy.EndSession();
 
                 Console.WriteLine("Transfer completed");
+
+                ((ICommunicationObject)proxy).Close();
+
+                factory.Close();
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.ToString());
+                Console.WriteLine(ex.Message);
+
+                factory.Abort();
             }
+
             Console.ReadLine();
         }
     }
