@@ -2,7 +2,7 @@
 Projekat iz predmeta Virtuelizacija procesa.
 
 ##Tema
-Nije dodeljena
+Vetrogenerator
 
 ##Opis
 Aplikacija za obradu i razmenu podataka korišćenjem:
